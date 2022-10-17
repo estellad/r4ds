@@ -805,6 +805,8 @@ ppt = read_pptx() %>%
   print(target = "editable_scatter.pptx")
 ```
 
+The same idea applies to R table objects
+
 <!-- TODO: now insert pptx screenshot -->
 
 ## Learning more
