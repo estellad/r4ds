@@ -680,6 +680,7 @@ You can also create your own themes, if you are trying to match a particular cor
 
 ## Saving your plots {#sec-ggsave}
 
+### `ggsave()` and knitr
 There are two main ways to get your plots out of R and into your final write-up: `ggsave()` and knitr.
 `ggsave()` will save the most recent plot to disk:
 
@@ -702,7 +703,7 @@ For reproducible code, you'll want to specify them.
 Generally, however, we recommend that you assemble your final reports using R Markdown, so we focus on the important code chunk options that you should know about for graphics.
 You can learn more about `ggsave()` in the documentation.
 
-### Figure sizing
+#### Figure sizing
 
 <!--# TO DO: Add something about faceted plots here. -->
 
@@ -760,7 +761,7 @@ plot
 If you want to make sure the font size is consistent across all your figures, whenever you set `out.width`, you'll also need to adjust `fig.width` to maintain the same ratio with your default `out.width`.
 For example, if your default `fig.width` is 6 and `out.width` is 0.7, when you set `out.width = "50%"` you'll need to set `fig.width` to 4.3 (6 \* 0.5 / 0.7).
 
-### Other important options
+#### Other important options
 
 When mingling code and text, like in this book, you can set `fig.show = "hold"` so that plots are shown after the code.
 This has the pleasant side effect of forcing you to break up large blocks of code with their explanations.
@@ -776,6 +777,10 @@ They are slightly lower quality, but will be much more compact.
 
 It's a good idea to name code chunks that produce figures, even if you don't routinely label other chunks.
 The chunk label is used to generate the file name of the graphic on disk, so naming your chunks makes it much easier to pick out plots and reuse in other circumstances (i.e. if you want to quickly drop a single plot into an email or a tweet).
+
+### officer
+Saving you R as an office object, where you can manually edit all of the downstream analysis.
+
 
 ## Learning more
 
