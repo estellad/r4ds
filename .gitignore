@@ -11,6 +11,7 @@ _book
 search_index.json
 libs
 *.rds
+editable_scatterplot.pptx
 _main.*
 tmp-pdfcrop-*
 figures
